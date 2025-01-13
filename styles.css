@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 200vh;
+  background: linear-gradient(to bottom, #e3f2fd, #90caf9);
+}
+
+.main-section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.2s ease-out;
+}
+
+.parallax-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-image {
+    width: 100px;
+  }
+}
